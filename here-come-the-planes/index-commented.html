@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- it is an instruction to the web browser about what version of HTML the page is written in. -->
+<html>
+<head>
+  <title>Esther</title>
+  <style>
+    /* CSS goes here */
+    body {
+      background-color: white;   /* it sets the whole page's background color */
+      color: white;  /* it decides the color of the text basically. */
+      text-align: center;  /* The text-align property specifies the horizontal alignment of text in an element. */
+      font-size: 40px; /* The font-size in body tag is used as a ruler.(i call it so.) If you set a font-size of 20px on the body element, then 1em = 20px and 2em = 40px */
+      background-image: url("jens-johnsson-qFYBki6u3Ik-unsplash.jpg");/* this line adds the image to this page as the background image */
+      text-shadow: 3px 3px black;/* it adds the shadows to the text. downward 3px, rightward 3px, and the color of the shadow is black */
+      font-family: "futura", sans-serif;
+      /* it decides all the font in this page */
+    }
+
+    .topimg {/* this is calling the class that i have made in body. */
+      border-radius: 8px; /* it makes the image having a curvy border */
+      filter: grayscale(100%);/* this line makes the colorful image in black and white*/
+      animation: fadeIn 10s;  /* this line let the image to fade in when you load the website */
+
+    }
+
+
+    .one {
+      margin-left: 30px;/* this let the text in class "one" have the margin, which is invisible, that is 30px away from the left side of the web page. */
+      text-align: left;/* the text will keep left */
+      color: white;
+      font-size: 80px;/* the text in class "one" have the font size that is 80px */
+    }
+
+    .tooltip {/* tooltip is the one that people often use when you put the mouse on sth, the definition will jump out in a small box or something. */
+      position: relative; /* The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position */
+      display: inline-block;
+      /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. */
+      /* Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+      border-bottom: 1px black;/* it sets the border bottom's style. It is the shorthand property for border-bottom-width, border-bottom-color and border-bottom-style. */
+      color: white;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;/* when the mouse is not hovering on the text, the tooltip is invisible, which is equal to "hidden" */
+      font-size: 30px;
+      width: 100px;
+      /* it changes the width of the black box that is surrounding the text. If I change it to 10px, the black box will be too small. */
+      background-color: black;  /* the background color of the tooltip is black. */
+      color: white;  /* the color of the text in tooltip is white */
+      text-align: center;
+      border-radius: 6px;  /* this rounds the cornor of the outer border edge. */
+      padding: 5px;  /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders.  */
+      position: absolute;
+      z-index: 1; /* it sets the stack order of the element. If the z-index of sth is negative, that thing will be placed behind others that have positive z-index. */
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      /* /when the mouse is hovering on the text, the tooltip will be visible. */
+    }
+
+
+    .tooltip2 {
+      position: relative;
+      /* the defualt positioning is static. Using relative enables us to move the element around by using top, left and so on. */
+      display: inline-block;
+      border-bottom: 1px black;
+      color: white;
+    }
+
+    .tooltip2 .tooltiptext2 {
+      font-size: 30px;
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .tooltip2:hover .tooltiptext2 {
+      visibility: visible;
+    }
+
+    .voice {
+      font-size: 80px;
+      color: white;
+      margin-left: 50px;
+    }
+
+
+    .marquee {
+      font-size: 40px;
+      position: relative;
+      width: 100vw;  /* hundredths of the viewport width */
+      max-width: 100%; /* the max-width property defines the maximum width of an element. %:Defines the maximum width in percent of the containing block */
+      height: 200px;  /* it controls the height of the invisible border of the marquee. */
+      overflow: hidden;
+      /* The CSS overflow property controls what happens to content that is too big to fit into an area. Since I put so many AH in the marquee,
+      the web page will be too wide if I don't write overflow to control it.*/
+      letter-spacing: 5px;  /* it sets the spaces between every two letters in one word.  */
+    }
+
+    .track {
+      position: absolute;
+      /* absolute is special, since it removes the element from the document flow, and everything else renders as if the absolute element doesn't even exist at all. */
+      /* this is useful if I want to stick something into specific position, and I dont want everything else to move around it. */
+      white-space: nowrap;
+      	/* Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line.  */
+        /* The text continues on the same line until a <br> tag is encountered */
+      will-change: transform;
+      /* I looked it up on mozilla, and it says that this "will-change" hints the browser how an element is expected to change. However, it is not recommendable
+      to use is too often, for the browser is trying very hard to optimize everything. */
+      animation: marquee 32s linear infinite;
+      /* this means that marquee lasts for 32 seconds and then it will start over agian, and go on forever.  */
+    }
+
+    .content {
+      color: white;
+    }
+
+    @keyframes marquee {
+      /* I searched on the internet, and I think it  controls whole processes and overall details of the animation.
+       the word "marquee" behind the @keyframes is the name of the movement. And we have the right to name the movement/animation. */
+      from {
+        transform: translateX(0);
+        /* this transform property applies the transformation to an element. We could make rotation, movement and something to the element.  */
+      }
+
+      to {
+        transform: translateX(-50%);
+        /* since the 50% is negative, to my understanding, it means that the element will be moved to left by 50% of the computed dimension along the x-axis
+        This enables the marquee to be infinite, since whenever the element is reaching its 50% of of the x-axis, it will start from the begining. So we could have infinite marquee.  */
+      }
+    }
+
+
+    .one {
+      animation: fadeIn 2s;
+      /* it set the whole time for my text to be complitily visible. I choose fadeIn animation to let the content gradually show on the page, which is cool :) */
+    }
+
+    .voice {
+      animation: fadeIn 7s;
+      /* I set this fadeIn animation to 7s since I want the second part of the lyrics shows gradually after the first part of the lyrics appears complitely.  */
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        /* basically, it will let the things that make use of fadeIn as animation to change their opacity from 0, which is invisible, to 1. */
+      }
+
+      to {
+        opacity: 1;
+        /* this is the point when the text or image is visible. */
+      }
+    }
+
+
+    a {/* The <a> tag defines a hyperlink, which is used to link from one page to another. */
+      color: white;
+      text-shadow: 3px 4px black;
+    }
+
+    a:hover {
+      /* something:hover means when the mouse is hovering on the content inside of the class, something will change based on the css properties that are added. */
+      color: gray;
+      /* in this case, when you put your mouse on the word "planes", it will change its color to gray. */
+    }
+
+
+    /* CSS STOPS here */
+  </style>
+</head>
+
+
+
+
+
+
+
+<!-- HTML goes here! -->
+
+<body>
+
+
+  <div class="marquee">
+    <!-- creating divs and giving them class names enable me to add css to these content here.  -->
+    <!-- The <div> tag defines a division or a section in an HTML document. -->
+    <!-- The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript. -->
+    <div class="track">
+      <div class="content">&nbsp;AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH
+        <!-- A non-breaking space is a space that will not break into a new line. -->
+      </div>
+    </div>
+  </div>
+
+
+  <img style="position: absolute; TOP:100px; left:930px; WIDTH:500px; HEIGHT:500px" SRC="nosmoking.jpeg" class="topimg">
+  <!-- we could use "style" to set the style of html element. -->
+  <!-- top means I set the image 100px away from the top of the webpage.  -->
+  <!-- left means I let the image 930px away from the left edge.  -->
+
+  <div class="one">
+    <div class="tooltip">
+      SMOKING
+      <span class="tooltiptext">No</span>
+      <!-- span does not provide visual changes by iteslf; it provides a way to add a hook to a part of a text or a part of a document. -->
+    </div>
+    <div>
+      <font face="futura">OR</font>
+      <!-- this is also a way to change the font of the text in html. -->
+    </div>
+    <div class="tooltip2">NON-SMOKING?
+      <span class="tooltiptext2">Yes</span>
+    </div>
+    <br><!-- br adds an empty line here -->
+  </div>
+
+
+
+  <p class="voice" align="right">
+    <!-- p means paragraph. Browsers automatically add some space (margin) before and after each <p> element.  -->
+    <font face="futura">
+      And the voice says:
+      </br> <!-- it provides a line break -->
+      Here comes the <a href="https://franthecrayon.github.io/web-nyu-idm/here-come-the-planes/">planes</a>
+      <!-- The href attribute specifies the URL of the page the link goes to. -->
+    </font>
+  </p>
+
+  <table>
+    <tr class="card"> <!-- this is "table row" that creates a row. -->
+      <th><img src="smoking.png" width="400" height="400"></th>  <!-- A table header is defined with the <th> tag. By default, table headings are bold and centered. -->
+      <th><img src="smoking.png" width="400" height="400"></th>  <!-- I could just render the images with width and height there, so that I don't need to write css to give them specific size.  -->
+      <th><img src="smoking.png" width="400" height="400"></th>
+      <th><img src="smoking.png" width="400" height="400"></th>
+    </tr>
+  </table>  <!-- using table is a good way for me to adjust the layout of images, and there is also a a table data/cell is defined with the <td> tag. -->
+
+
+  <div class="marquee">
+    <div class="track">
+      <div class="content">&nbsp;AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH AH
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+<!-- HTML STOPS here! -->
