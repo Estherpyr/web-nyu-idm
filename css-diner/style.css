@@ -21,7 +21,6 @@ body {
 body {
   font-family: 'Tomorrow', sans-serif;
   background-color: pink;
-  filter: blur(50%);
   color: white;
   text-align:center;
 }
@@ -30,6 +29,12 @@ h1{
   font-size: 100px;
   text-shadow: 2px 2px gray;
 }
+/* Level 1: select all elements of type h1 */
+
+.my-fun-class *{
+  color: white;
+}
+/* level 11;select all elements inside of my-fun-class */
 
 .my-fun-class {
   width: 60%;
@@ -38,6 +43,7 @@ h1{
   margin:auto;
   font-size: 30px;
 }
+/* level 6: select elements by their class. */
 
 img{
   align-items: baseline;
@@ -53,10 +59,13 @@ table {
 table :nth-child(2){
   filter:blur(1px);
 }
+/* level 18:select the nth child element in another element */
 
 p:nth-of-type(5){
    color:yellow;
 }
+/* level 21: select specific element based on its type
+and order in another element */
 
 #sun{
   position: absolute;
