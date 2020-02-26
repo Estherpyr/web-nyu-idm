@@ -1,41 +1,38 @@
-#Object Meditation: My cat's fur
+#Object Meditation: ~how i'm feeling~(Lauv's album)
 
 
 ## What are 5 words that come to mind when I think of this object
-- home childhood afterschool sofa company
+- rainbow, emotions, personalities,
 
 ### Are there spatial places this object is associated with?
-- home
+- world
 
 ### What does my object look like
-- in the shape of cat head
+- It's an album
 
 ### feel like
-- feel like furry kitty
+- feel like everything when I am down or simply need company
 
 ### smell like
 - nothing
 
 ### sound like
-- nothing
+- most healing voice in the world
 
 ### Where did you get it?
-- I made it myself before I went to NYC
+- Last year from spotify lol, and I went to Lauv's concert with my ex boyfriend.
 
 ### What are the emotions attached to this object for you?
-- I feel warm and safe.
+- I feel so related with the lyrics, and I can evoke so many memories while listening to this album.
 
 ### Why did you choose it?
-- my cat is the one who has become my friend for the longest time
+- I listen to this album all the time recently, and I think it's so special to me that I really need to make a website to memorize it.
 
 ### What do you see in your object that no one else would see?
-- I would see even though I need to pick up her fur at home everyday, and she brings a lot of troubles, me and my
-- family still love her.
+- memories
 
 ### What are some other objects it does or might have relationships with?
-- sofa at home, my bed back to my home, sunbath that she always enjoys, etc
-
-
+- my friends.
 
 
 
