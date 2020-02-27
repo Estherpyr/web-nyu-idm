@@ -8,6 +8,16 @@ body {
   box-sizing: inherit;
 }
 
+
+@keyframes fadeIn{
+     from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+}
+
 @font-face {
   font-family: 'violet';
   src: url('./fonts/VioletSans-Regular.woff') format('woff');
@@ -49,6 +59,7 @@ body {
   width: 100%;
   z-index: -1;
   overflow:hidden;
+  animation: fadeIn 3s;
 }
 
 .color-overlay{
