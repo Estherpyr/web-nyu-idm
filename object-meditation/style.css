@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+.section1{
+  position: relative;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section1 h1 {
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+  z-index: 1;
+  opacity:0.3;
+}
+
+.video-container{
+  /* filter:blur(4px); */
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: -1;
+  overflow:hidden;
+}
+
+.color-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: white;
+  width: 100%;
+  height:100vh;
+  opacity:0.3;
+}
+
+.title{
+  font-size: 60px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  /* use backgroud-clip here:  https://w3bits.com/rainbow-text/ */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+img:hover{
+  /* transform: rotate(30deg); */
+  transform: scale(1.5);
+
+}
+
+table, th{
+  padding: 35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
