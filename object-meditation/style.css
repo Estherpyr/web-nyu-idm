@@ -83,15 +83,6 @@ body {
   color: transparent;
 }  */
 
-img:hover{
-  /* transform: rotate(30deg); */
-  transform: scale(1.7);
-}
-
-table, th{
-  padding:35px;
-  font-size: 18px;
-}
 
 
 @media only screen and (max-width: 600px) {
