@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+@keyframes fadeIn{
+     from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+}
+
+
+@font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color:white;
+  /* #ffe6ff */
+}
+
+ /* video{
+  position: relative;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} */
+
+.section1-pic {
+  align-items:center;
+  padding-left: 100px;
+  padding-top: 300px;
+  /* margin: 10px; */
+  z-index: 1;
+  width:550px;
+  height:300px;
+}
+
+.video-container{
+  /* filter:blur(4px); */
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100vh;
+  z-index: -1;
+  overflow:hidden;
+  animation: fadeIn 3s;
+}
+
+/* .lauvs{
+  padding-top: 300px;
+} */
+
+.color-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: white;
+  width:100%;
+  height:100vh;
+  opacity:0.8;
+}
+
+.slidershow{
+  width: 900px;
+  height: 350px;
+  padding-top: 1900px;
+  padding-bottom: 400px;
+  overflow: hidden;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid black;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #ffe6ff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 690%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 40%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 900px;
+  height: 350px;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -16.5%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -75%;
+}
+#r5:checked ~ .s1{
+  margin-left: -133%;
+}
+#r6:checked ~ .s1{
+  margin-left: -200%;
+}
+#r7:checked ~ .s1{
+  margin-left: -240%;
+}
+/* .title{
+  font-size: 60px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  /* use backgroud-clip here:  https://w3bits.com/rainbow-text/ */
+  /* -webkit-background-clip: text;
+  color: transparent;
+}  */
+
+/* img:hover{
+  /* transform: rotate(30deg); */
+  /* transform: scale(1.7);
+} */
+
+/* table, th{
+  padding:35px;
+  font-size: 18px;
+} */
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
