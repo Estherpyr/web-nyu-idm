@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>✨BLUE LAUV✨</title>
+</head>
+
+<body>
+  <h1>Sorry I don't need love</h1>
+  <!-- I will make it white -->
+
+  <audio controls autoplay>
+    <source src="Julia.mp3" type="audio/mpeg">
+  </audio>
+  <p>Actually I need Lauv.</p>
+  <!-- make it same to the original bg color -->
+
+  <button>See Text</button>
+  <script type="text/javascript">
+    var color = ["#ffffff", "#668cff"]
+    var i = 0;
+    document.querySelector("button").addEventListener("click", function(){
+      i = i < color.length ? ++i :0;
+      document.querySelector("body").style.background = color[i]
+    })
+  </script>
+
+
+
+</body>
+
+</html>
