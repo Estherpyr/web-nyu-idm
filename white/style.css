@@ -1,0 +1,45 @@
+html,
+
+body{
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h1{
+  top:90px;
+}
+
+img{
+  width:33%;
+  height:auto;
+}
+
+.row1{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.row2{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.row3{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.row4{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.row5{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
