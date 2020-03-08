@@ -1,0 +1,64 @@
+html,
+body{
+  background-color: limegreen;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fly-in-text{
+  list-style: none;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+.fly-in-text li{
+  display:inline-block;
+  color: white;
+  margin-right:10px;
+  font-weight: 200;
+  font-size: 2em;
+  opacity:1;
+  transition: all 1.5s ease;
+}
+.fly-in-text li:last-child{
+  margin-right:0;
+}
+
+.fly-in-text.hidden li {
+  opacity:0;
+}
+
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden li:nth-child(10) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hidden li:nth-child(11) { transform: translateX(10px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(12) { transform: translateX(-300px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(13) { transform: translateX(20px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(14) { transform: translateX(30px) translateY(200px); }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
