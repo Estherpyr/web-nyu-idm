@@ -1,8 +1,18 @@
 html,
-
 body{
   font-size: 1.3em;
   text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1{
@@ -42,4 +52,10 @@ img{
   display:flex;
   justify-content: space-around;
   margin-top: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
