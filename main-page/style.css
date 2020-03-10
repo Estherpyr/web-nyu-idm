@@ -31,6 +31,16 @@ body {
   /* #ffe6ff */
 }
 
+h1{
+  background-image: linear-gradient(to left, violet, blue, green, yellow, orange, red);
+  /* use backgroud-clip here:  https://w3bits.com/rainbow-text/ */
+  -webkit-background-clip: text;
+  color: transparent;
+  /* background: white;  */
+  text-align: center;
+  font-size: 1em;
+  margin-top:730px;
+}
  /* video{
   position: relative;
   width:100%;
