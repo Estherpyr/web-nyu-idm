@@ -41,15 +41,7 @@ h1{
   font-size: 1em;
   margin-top:730px;
 }
- /* video{
-  position: relative;
-  width:100%;
-  height:100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-} */
+
 
 .section1-pic {
   align-items:center;
@@ -62,7 +54,6 @@ h1{
 }
 
 .video-container{
-  /* filter:blur(4px); */
   position: absolute;
   top:0;
   left:0;
@@ -73,9 +64,6 @@ h1{
   animation: fadeIn 3s;
 }
 
-/* .lauvs{
-  padding-top: 300px;
-} */
 
 .color-overlay{
   position: absolute;
@@ -179,8 +167,107 @@ input[name="r"]{
 } */
 
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+/* iPad protrait*/
+@media only screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
   }
+
+  .navigation{
+    left:53%;
+  }
+
+  .video-container{
+    width:830px;
+  }
+  .slideshow{
+    width:900px;
+  }
+
+  .slides{
+    position: relative;
+    width: 690%;
+    height: 100%;
+    display: flex;
+  }
+
+  h1{
+    font-size: 20px;
+    margin-top: 850px;
+    margin-left: 60px;
+  }
+
+}
+
+/* iPad Pro portrait & iPad landscape */
+@media (max-width:1024px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .navigation{
+    bottom:320px;
+  }
+  .slides{
+    position: relative;
+    width: 690%;
+    height: 100%;
+    display: flex;
+  }
+
+  .h1{
+    background-image: linear-gradient(to left, violet, blue, green, yellow, orange, red);
+    /* use backgroud-clip here:  https://w3bits.com/rainbow-text/ */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* background: white;  */
+    text-align: center;
+    font-size: 1em;
+    margin-top:1900px;
+  }
+}
+
+/* iPhoenX */
+@media (max-width: 375px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .video-container{
+    width:920px;
+  }
+
+  .slideshow{
+    left:123%;
+  }
+
+  h1{
+    margin-top:750px;
+    width:820px;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .navigation{
+    left:50%;
+  }
+
+  .slideshow{
+    margin-left: 500px;
+  }
+
+  .middle{
+    left:122%;
+  }
+
 }
