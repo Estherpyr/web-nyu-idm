@@ -57,8 +57,14 @@ body{
 .fly-in-text.hidden li:nth-child(14) { transform: translateX(30px) translateY(200px); }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and ( max-width: 375px) {
   body {
-    background-color: lightblue;
+    font-size:0.2em;
+  }
+}
+
+@media only screen and (min-width: 812px) {
+  body {
+    font-size:0.5em;
   }
 }
