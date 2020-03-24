@@ -229,7 +229,7 @@ input[name="r"]{
 }
 
 /* iPhoenX */
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   body{
     overflow-x: hidden;
   }
@@ -271,3 +271,48 @@ input[name="r"]{
   }
 
 }
+/*
+@media (min-width: 812px) {
+  body{
+    overflow-x: hidden;
+  }
+  .section1-pic{
+    padding-top:100px;
+    width:300px;
+    height:180px;
+  }
+
+  .video-container{
+    width:110%;
+  }
+
+  .middle{
+    left:50%;
+  }
+
+  h1{
+    margin-top:750px;
+    width:820px;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .navigation{
+    left:50%;
+  }
+
+  .slideshow{
+    margin-left: 500px;
+  }
+
+
+} */
