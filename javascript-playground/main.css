@@ -11,8 +11,12 @@ body {
   text-align: left;
   background-color: black;
   font-size: 4em;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Supermercado One';
   color: white;
+}
+
+div{
+  display: block;
 }
 
 .allNames {
@@ -20,6 +24,11 @@ body {
     display: block;
     text-align: center;
     margin-bottom: 1em;
+}
+
+.colorss{
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 #names {
@@ -32,4 +41,8 @@ body {
 
 #listNames {
   color: red;
+}
+
+#hihi{
+  color:blue;
 }

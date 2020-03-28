@@ -4,6 +4,7 @@
 
 let namesArray = ['Kevin','McCoy','Emily','Frederic','Alisha','Ashli','Simon','Ty','Fiona','Prismo','Sammy','Caroline','Francesca','Karl','Esther','Irene','Martin','Yanxin','Katrina','Kiana'];
 
+
 //Array starts from 0
 console.log(namesArray[0]);
 
@@ -21,13 +22,27 @@ function getRandom(max){
 let n = getRandom(namesArray.length)
 let randomName = namesArray[n];
 
-console.log(namesArray.length);
+// console.log(namesArray.length);
 // console.log(n);
 console.log(randomName);
 
-let arrayAsString = namesArray.join(', ')
+let arrayAsString = namesArray.join('🌸 ');
+console.log(namesArray);
 console.log(arrayAsString);
 
-$('name').html(namesArray[n]);
+let sortedNames = namesArray.sort();
+console.log(sortedNames);
 
-$('names').html(arrayAsString);
+
+let text = "";
+
+for(i=0; i<namesArray.length; i++){
+  text += namesArray[i] + "😁"+ i + "<br>";
+}
+
+
+$("#listNames").html(text);
+
+$('#name').html(namesArray[n]);
+
+$('#names').html(arrayAsString);
